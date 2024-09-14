@@ -1,4 +1,4 @@
-This repo will serve as a step by step guide on how to interface a raspberry pi zero 2 w with a Arducam module 3 (IMX708 sensor), a 1.14" LCD display screen (ST7789 Driver), 
+This repo will serve as a step-by-step guide on how to interface a raspberry pi zero 2 w with a Arducam module 3 (IMX708 sensor), a 1.14" LCD display screen (ST7789 Driver), 
 and a board-mounted tactile switch (or any switch for that matter).
 
 Link to components:
