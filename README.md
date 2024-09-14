@@ -2,8 +2,7 @@
 
 ## Introduction
 
-This repo will serve as a step-by-step guide on how to interface a raspberry pi zero 2 w with a Arducam module 3 (IMX708 sensor), a 1.14" LCD display screen (ST7789 Driver), 
-and a board-mounted tactile switch (or any switch for that matter).
+This repo will serve as a step-by-step guide on how to interface a raspberry pi zero 2 w with a Arducam module 3 (IMX708 sensor), a 1.14" LCD display screen (ST7789 Driver), and a board-mounted tactile switch (or any switch for that matter).
 
 ## Prerequisites
 
@@ -35,11 +34,6 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
   2. Gently lift the plastic clip.
   3. Insert the camera ribbon cable with the metal contacts facing away from the Ethernet port.
   4. Press down the clip to secure the cable.
-  
-- **For a USB Webcam:**
-  - Plug the webcam into any available USB port.
-
-*Insert image here if available.*
 
 ## Step 2: Configuring the Software
 
