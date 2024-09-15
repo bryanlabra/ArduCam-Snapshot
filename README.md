@@ -56,10 +56,9 @@ Hit **CONTINUE** at the pop up screen, and move the SD card to the  unpowered ra
 ### 1.4 Setup VNC access 
 Connect the RPI to a monitor with a HDMI mini to HDMI cable. Connect the keyboard and mouse.
 
-Finally connect the RPI to power and let the system boot up.
+Connect the RPI to power and let the system boot up.
 
 We then need to enable VNC access and retrieve the IP address of the RPI
-
 
 1. Bring up the terminal and type:
    
@@ -67,6 +66,12 @@ We then need to enable VNC access and retrieve the IP address of the RPI
    hostname -I
 
 This will give you the IP address to use in VNC viewer from your computer.
+2. Bring up the system configuration screen with:
+   
+   ```bash
+   sudo raspi-config
+
+navigate down to **Interface Options** and click [enter]. 
 
 
 ### 1.5 Setup a static IP for the Raspberry Pi
