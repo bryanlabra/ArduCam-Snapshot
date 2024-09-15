@@ -35,7 +35,7 @@ Pins 9 and 10 are for the button.
 
 <img width="694" alt="Screenshot 2024-09-15 at 1 36 40 PM" src="https://github.com/user-attachments/assets/16cc5374-b61a-4a47-bb3c-6a3b0b9aa877">
 
-Note that ribbon cable may be different for RPI zero 2W and other versions. I am using the ribbon cable that came with the camera. The leads face down(blue end) on the pi, the leads face up (silver end) on the camera
+Note that ribbon cable may be different for RPI zero 2W and other versions. I am using the ribbon cable that came with the camera. The leads face down (blue end) on the pi, the leads face up (silver end) on the camera
 ### 1.2 Connecting the 12MP IMX708 Arducam Module 3 Camera
 
 
