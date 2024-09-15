@@ -1,3 +1,5 @@
 secrets.txt
-env
+env/
 ArduCam-Snapshot.img
+__pycache__/
+*.py[cod]

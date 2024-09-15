@@ -10,13 +10,13 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
   - Raspberry Pi Zero 2 w https://a.co/d/5vl7Fxk
   - Arducam module 3 for raspberry pi with ribbon cable https://a.co/d/4OyNcka
   - 1.14" LCD Display module https://a.co/d/4hXdnB6
+  - board-mounted tactile switch https://a.co/d/65UapIX
   - MicroSD card (256 is probably overkill) https://a.co/d/5TTvkYf
   - Power supply
   - For troubleshooting: HDMI mini to HDMI cable, micro USB to female USB A,  monitor, bluetooth mouse and keyboard combo
   
 
-board-mounted tactile switch
-https://a.co/d/65UapIX
+
 - **Software:**
   - Raspberry Pi Imager 
   - Internet connection for software updates (optional but recommended)
