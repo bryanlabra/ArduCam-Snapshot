@@ -46,14 +46,14 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
    sudo apt update && sudo apt upgrade -y
 
 
-### X.1 Starting the script on Boot
+### X.1 Starting the script on boot
 
 1. Open terminal and create a systemd service to start the script on boot:
   
    ```bash
    sudo touch /etc/systemd/system/ArduCam-Snapshot.service
 
-2. open the service file:
+2. Open the service file:
    
    ```bash
    sudo nano /etc/systemd/system/ArduCam-Snapshot.service
@@ -83,12 +83,25 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
    ```bash
    sudo systemctl daemon-reload
    sudo systemctl restart Arducam_Snapshot.service
-6. After restarting, check if the service if running correctly:
+6. After restarting, check if the service is running correctly:
 
     ```bash
     sudo systemctl status feed.service
 
-7. Perform the system reboot. The service should start the script on its own!
+7. Perform a system reboot. The service should start the script on its own!
 
     ```bash
     sudo reboot
+
+8. You may want to stop the service. Exit the script by pressing q. Navigate to the terminal and type
+
+    ```bash
+    sudo systemctl stop ArduCam-Snapshot.service
+
+9. Disable the service so that it does not restart again
+
+
+    ```bash
+    sudo systemctl disable ArduCam-Snapshot.service
+
+This should disable the service from restarting, allowing you to continue troubleshooting the project
