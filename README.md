@@ -1,4 +1,4 @@
-# Interfacing Raspberry Pi zero 2 w with Arducam Module 3 and 1.14" LCD module
+# Interfacing Raspberry Pi Zero 2 W with Arducam Module 3 and 1.14" LCD module
 
 ## Introduction
 
@@ -19,15 +19,29 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
 - **Software:**
   - Raspberry Pi Imager 
   - Internet connection for software updates (optional but recommended)
+  - VNC Viewer
+
+- **Very Helpful Links:**
+  -Initializing the 1.14" display https://www.waveshare.com/wiki/1.14inch_LCD_Module
+  -Setting up the camera https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/12MP-IMX708/#standard-imx708-camera-module-3
+  -Installing OpenCV lite https://qengineering.eu/install-opencv-lite-on-raspberry-pi.html
 
 ## Step 1: Setting Up the Hardware
 
-### 1.1 Flash the sd card
+### 1.1 Wiring the raspberry pi to the camera and display
 
-Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
 
-### 1.2 Connect the Camera Module
+### 1.2 Flash the SD card with the appropriate image
 
+
+### 1.3 Setup VNC access 
+
+### 1.4 Setup a static IP for the Raspberry Pi
+    skipping this step 
+
+### 1.5 LCD Module Setup
+
+### 1.6 Arducam Module 3 setup
 - **For the Raspberry Pi Camera Module:**
   1. Locate the CSI (Camera Serial Interface) slot.
   2. Gently lift the plastic clip.
