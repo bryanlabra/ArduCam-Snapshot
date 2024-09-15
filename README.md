@@ -43,15 +43,30 @@ Start the Raspberry Pi imager (I'm using v1.8.5)
 
 Click **CHOOSE DEVICE** and choose the appropriate device (Raspberry Pi Zero 2 W)
 
-Click **CHOOSE OS** and choose a port of Bullseye, either 32-bit or 64-bit should work. I will be using the *Raspberry Pi OS (Legacy, 64-bit)* Bullseye release. You may need to click on **Raspberry Pi OS (other)** to find this version.
+Click **CHOOSE OS** and choose a 32-bit port of Bullseye. I will be using the *Raspberry Pi OS (Legacy, 32-bit)* release.
 
-Click **CHOOSE STORAGE** and choose the appropriate device. Click **NEXT**
+Click **CHOOSE STORAGE** and choose the appropriate device. Click **NEXT**.
 
 When prompted to customize your settings, click **EDIT SETTINGS** and make any adjustments you would like. I use this opportunity to set up the wireless internet connection.
 
-Click **SAVE** followed by **YES**. Click **YES** again to erase and reformat the SD card. The process can take several minutes.
+Click **SAVE** followed by **YES**. Click **YES** again to erase and reformat the SD card. The process may take 10-15 minutes.
+
+Hit **CONTINUE** at the pop up screen, and move the SD card to the  unpowered raspberry pi.
 
 ### 1.4 Setup VNC access 
+Connect the RPI to a monitor with a HDMI mini to HDMI cable. Connect the keyboard and mouse.
+
+Finally connect the RPI to power and let the system boot up.
+
+We then need to enable VNC access and retrieve the IP address of the RPI
+
+Bring up terminal on the RPI desktop and type:
+
+   ```bash
+   hostname -I
+
+This will give you the IP address to input in VNC viewer from your computer
+
 
 ### 1.5 Setup a static IP for the Raspberry Pi
 skipping this step 
