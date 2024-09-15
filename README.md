@@ -32,6 +32,8 @@ Pins 9 and 10 are for the button.
 
 <img width="1073" alt="Screenshot 2024-09-15 at 1 10 57 PM" src="https://github.com/user-attachments/assets/69d9f257-41db-46fa-828c-79a825819ba0">
 
+<img width="694" alt="Screenshot 2024-09-15 at 1 36 40 PM" src="https://github.com/user-attachments/assets/16cc5374-b61a-4a47-bb3c-6a3b0b9aa877">
+
 ### 1.2 Connecting the 12MP IMX708 Arducam Module 3 Camera
 
 
