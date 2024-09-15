@@ -117,14 +117,13 @@ Here we will summerize the contents from this page
 https://qengineering.eu/install-opencv-lite-on-raspberry-pi.html
 describing how to install OpenCV lite
 
-1. Increase the swapping space for the RPi to 512:
+1. Increase the swapping space for the RPi by typing:
    ```bash
    sudo nano /etc/dphys-swapfile
    ```
-   
+   Changing the CONF_SWAPSIZE value to 512:
    ```ini
     CONF_SWAPSIZE = 512
-
 
 Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit. 
 
