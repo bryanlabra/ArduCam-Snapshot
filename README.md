@@ -76,7 +76,7 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
     [Install]
     WantedBy=multi-user.target
 
-4. Save by pressing CTRL+S followed by CTRL + X to exit
+4. Save by pressing CTRL+S followed by CTRL+X to exit
 
 5. Reload systemmd and restart the service:
    
