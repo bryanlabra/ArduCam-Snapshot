@@ -66,12 +66,13 @@ We then need to enable VNC access and retrieve the IP address of the RPI
    hostname -I
 
 This will give you the IP address to use in VNC viewer from your computer.
+
 2. Bring up the system configuration screen with:
    
    ```bash
    sudo raspi-config
 
-navigate down to **Interface Options** and click 'enter'
+navigate down to **Interface Options** and click enter  
 
 
 ### 1.5 Setup a static IP for the Raspberry Pi
