@@ -44,3 +44,33 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
 
    ```bash
    sudo apt update && sudo apt upgrade -y
+
+
+   ### X.1 Starting the script on Boot
+
+1. Open terminal and create a systemd service to start the script on boot
+
+   ```bash
+   sudo touch /etc/systemd/system/ArduCam-Snapshot.service
+
+2. open the service file
+   ```bash
+   sudo nano /etc/systemd/system/ArduCam-Snapshot.service
+
+3. Update the file:
+
+   ```ini
+   [Unit]
+    Description= Service to start the camera on boot
+    After=multi-user.target
+
+    [Service]
+    ExecStart=/usr/bin/python3 /home/pi/scripts/ArduCam-Snapshot.py
+    StandardOutput=inherit
+    StandardError=inherit
+    Restart=always
+    User=pi  ##change this value accordingly
+    Environment=DISPLAY=:0
+
+    [Install]
+    WantedBy=multi-user.target
