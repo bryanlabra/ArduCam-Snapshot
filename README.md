@@ -125,7 +125,7 @@ describing how to install OpenCV lite
    ```ini
     CONF_SWAPSIZE = 512
 
-Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit. 
+Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X</kbd> to exit. 
 
 2. Reboot the system
    ```bash
@@ -134,7 +134,21 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S
 connect to the RPi with VNC viewer after the system has rebooted
 
 
+3. Install third party software (see link above for details). These can be directly copy and pasted to terminal.
+    ```bash
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install build-essential cmake git pkg-config
+    sudo apt-get install python3-dev python3-numpy
+    sudo apt-get install python-dev python-numpy
+    sudo apt-get install libjpeg-dev libpng-dev
+    sudo apt-get install libavcodec-dev libavformat-dev
+    sudo apt-get install libswscale-dev libdc1394-22-dev
+    sudo apt-get install libv4l-dev v4l-utils
+    sudo apt-get install libgtk2.0-dev libcanberra-gtk* libgtk-3-dev
+    sudo apt-get install libtbb2 libtbb-dev
 
+4.
 
 
 
