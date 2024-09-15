@@ -41,6 +41,7 @@ Note that ribbon cable may be different for RPI zero 2W and other versions. I am
 ### 1.3 Flash the SD card with the image
 Start the Raspberry Pi imager (I'm using v1.8.5)
 Click **CHOOSE DEVICE** and choose the appropriate device (Raspberry Pi Zero 2 W)
+
 Click **CHOOSE OS** and choose a port of Bullseye, either 32-bit or 64-bit should work. I will be using the *Raspberry Pi OS (Legacy, 64-bit)* Bullseye release. You may need to click on **Raspberry Pi OS (other)** to find this version.
 
 ### 1.4 Setup VNC access 
