@@ -122,9 +122,6 @@ describing how to install OpenCV lite
    sudo nano /etc/dphys-swapfile
 
 
-```ini
- CONF_SWAPSIZE =512
-
 Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit. 
 
 2. Reboot the system
@@ -133,8 +130,10 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S
 
 connect to the RPi with VNC viewer after the system has rebooted
 
-3. 
 
+3. ini
+   ```ini
+  CONF_SWAPSIZE = 512
 
 
 
