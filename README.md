@@ -27,22 +27,25 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
 
 ## Step 1: Setting Up the Hardware
 
-### 1.1 Wiring the raspberry pi to the camera and display
+### 1.1 Wiring the 1.14" display to the rpi
+Pins 9 and 10 are for the button.
+
 <img width="1073" alt="Screenshot 2024-09-15 at 1 10 57 PM" src="https://github.com/user-attachments/assets/69d9f257-41db-46fa-828c-79a825819ba0">
 
-<img width="694" alt="Screenshot 2024-09-15 at 1 36 40 PM" src="https://github.com/user-attachments/assets/a7831caf-0f0a-44ec-877a-edfd29790237">
-
-### 1.2 Flash the SD card with the appropriate image
+### 1.2 Connecting the 12MP IMX708 Arducam Module 3 Camera
 
 
-### 1.3 Setup VNC access 
+### 1.3 Flash the SD card with the appropriate image
 
-### 1.4 Setup a static IP for the Raspberry Pi
+
+### 1.4 Setup VNC access 
+
+### 1.5 Setup a static IP for the Raspberry Pi
 skipping this step 
 
-### 1.5 LCD Module Setup
+### 1.6 LCD Module Setup
 
-### 1.6 Arducam Module 3 setup
+### 1.7 Arducam Module 3 Camera setup
 - **For the Raspberry Pi Camera Module:**
   1. Locate the CSI (Camera Serial Interface) slot.
   2. Gently lift the plastic clip.
