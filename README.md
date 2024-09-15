@@ -111,19 +111,19 @@ A static IP address should be established for the RPi
    sudo apt-get update
    sudo apt-get upgrade
 
-
 ### 2.2 Installing OpenCV lite
 
 Here we will summerize the contents from this page
 https://qengineering.eu/install-opencv-lite-on-raspberry-pi.html
 describing how to install OpenCV lite
 
-1. Increase the swapping space for the RPi to 512
+1. Increase the swapping space for the RPi to 512:
    ```bash
    sudo nano /etc/dphys-swapfile
 
-   ```ini
-   CONF_SWAPSIZE =512
+
+```ini
+ CONF_SWAPSIZE =512
 
 Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit. 
 
