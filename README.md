@@ -60,10 +60,22 @@ Finally connect the RPI to power and let the system boot up.
 
 We then need to enable VNC access and retrieve the IP address of the RPI
 
-Bring up terminal on the RPI desktop and type:
+Bring up terminal on the RPI desktop and type 
 
-   ```bash
+   ``bash
    hostname -I
+
+
+
+
+
+
+   
+
+2. Open the service file:
+   
+   ```bash
+   sudo nano /etc/systemd/system/ArduCam-Snapshot.service
 
 This will give you the IP address to input in VNC viewer from your computer
 
