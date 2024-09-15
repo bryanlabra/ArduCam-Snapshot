@@ -16,14 +16,13 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
   - For troubleshooting: HDMI mini to HDMI cable, micro USB to female USB A,  monitor, bluetooth mouse and keyboard combo
   
 
-
 - **Software:**
   - Raspberry Pi Imager 
   - Internet connection for software updates (optional but recommended)
 
 ## Step 1: Setting Up the Hardware
 
-### 1.1 Power Off the Raspberry Pi
+### 1.1 Flash the sd card
 
 Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
 
