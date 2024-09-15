@@ -22,9 +22,9 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
   - VNC Viewer
 
 - **Very Helpful Links:**
-  -Initializing the 1.14" display https://www.waveshare.com/wiki/1.14inch_LCD_Module
-  -Setting up the camera https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/12MP-IMX708/#standard-imx708-camera-module-3
-  -Installing OpenCV lite https://qengineering.eu/install-opencv-lite-on-raspberry-pi.html
+  - Initializing the 1.14" display https://www.waveshare.com/wiki/1.14inch_LCD_Module
+  - Setting up the camera https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/12MP-IMX708/#standard-imx708-camera-module-3
+  - Installing OpenCV lite https://qengineering.eu/install-opencv-lite-on-raspberry-pi.html
 
 ## Step 1: Setting Up the Hardware
 
