@@ -60,7 +60,7 @@ Ensure the Raspberry Pi is shut down and unplugged before connecting the camera.
 3. Update the file:
 
    ```ini
-   [Unit]
+    [Unit]
     Description= Service to start the camera on boot
     After=multi-user.target
 
