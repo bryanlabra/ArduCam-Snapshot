@@ -120,6 +120,11 @@ describing how to install OpenCV lite
 1. Increase the swapping space for the RPi to 512:
    ```bash
    sudo nano /etc/dphys-swapfile
+   ```
+   
+   ```ini
+    CONF_SWAPSIZE = 512
+
 
 Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit. 
 
@@ -130,9 +135,6 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S
 connect to the RPi with VNC viewer after the system has rebooted
 
 
-3. ini
-   ```ini
-    CONF_SWAPSIZE = 512
 
 
 
