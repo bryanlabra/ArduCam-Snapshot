@@ -37,7 +37,7 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
 ### 1.3 Setup VNC access 
 
 ### 1.4 Setup a static IP for the Raspberry Pi
-    skipping this step 
+skipping this step 
 
 ### 1.5 LCD Module Setup
 
