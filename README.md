@@ -63,7 +63,6 @@ skipping this step
    ```bash
    sudo apt update && sudo apt upgrade -y
 
-
 ### X.1 Starting the script on boot
 
 1. Open terminal and create a systemd service to start the script on boot:
