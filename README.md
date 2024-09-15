@@ -28,9 +28,12 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
 ## Step 1: Setting Up the Hardware
 
 ### 1.1 Wiring the 1.14" display to the rpi
-Pins 9 and 10 are for the button.
+Pins 9 and 10 are for the button. Note that ribbon cable may be different for RPI zero 2W and other versions
 
 <img width="1073" alt="Screenshot 2024-09-15 at 1 10 57 PM" src="https://github.com/user-attachments/assets/69d9f257-41db-46fa-828c-79a825819ba0">
+
+
+Note that ribbon cable may be different for RPI zero 2W and other versions
 
 <img width="694" alt="Screenshot 2024-09-15 at 1 36 40 PM" src="https://github.com/user-attachments/assets/16cc5374-b61a-4a47-bb3c-6a3b0b9aa877">
 
