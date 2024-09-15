@@ -148,7 +148,7 @@ Connect to the RPi with VNC viewer after the system has restarted
     sudo apt-get install libgtk2.0-dev libcanberra-gtk* libgtk-3-dev
     sudo apt-get install libtbb2 libtbb-dev
 
-4.Download and install OpenCV by typing:
+4. Download and install OpenCV by typing:
     ```bash
     cd~git clone --depth=1 https://github.com/opencv/opencv.git
     cd opencv
