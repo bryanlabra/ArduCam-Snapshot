@@ -72,7 +72,7 @@ This will give you the IP address to use in VNC viewer from your computer.
    ```bash
    sudo raspi-config
 
-navigate down to **Interface Options** and click enter  
+navigate down to **Interface Options** and Press <kbd>Enter</kbd> to continue. 
 
 
 ### 1.5 Setup a static IP for the Raspberry Pi
