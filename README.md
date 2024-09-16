@@ -218,10 +218,29 @@ Connect to the RPi with VNC viewer after the system has restarted
           -D INSTALL_C_EXAMPLES=OFF \
           -D INSTALL_PYTHON_EXAMPLES=OFF ..
 
+5. Start the build:
+    ```bash
+    make -j$(nproc)
 
+6. Follow with:
+    ```bash
+    sudo make install
+    sudo ldconfig
+    sudo apt-get update
 
+7. Remove the OpenCV folder
+    ```bash
+    cd ~
+    sudo rm -rf opencv
 
-
+8. Check your version of open cv
+    ```bash
+    python3
+    ```
+    ```bash
+    import cv2
+    cv2.__version__
+    
 
 
 
