@@ -277,9 +277,10 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
     camera_auto_detect=0
     dtoverlay=imx708
     ```
-  Save and exit. reboot the system from terminal using
-    ```bash
-    sudo reboot
+    Save and exit
+2. Reboot the system.
+   ```bash
+   sudo reboot
     
 
 
