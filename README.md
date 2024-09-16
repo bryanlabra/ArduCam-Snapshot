@@ -47,7 +47,7 @@ Click **CHOOSE OS** and choose a 32-bit port of Bullseye. I will be using the *R
 
 Click **CHOOSE STORAGE** and choose the appropriate device. Click **NEXT**.
 
-When prompted to customize your settings, click **EDIT SETTINGS** and make any adjustments you would like. I use this opportunity to set up the wireless internet connection.
+When prompted to customize your settings, click **EDIT SETTINGS** and make any adjustments you would like. I use this opportunity to set up the wireless internet connection. Note: make sure the hostname remains *raspberrypi*
 
 Click **SAVE** followed by **YES**. Click **YES** again to erase and reformat the SD card.
 
@@ -244,17 +244,18 @@ Connect to the RPi with VNC viewer after the system has restarted
     sudo pip3 install spidev 
     ```
 
-
-    
-
-2. Check your version of open cv
+2. FBCP Porting, Download the drivers
     ```bash
-    python3
-    ```
-    ```bash
-    import cv2
-    cv2.__version__
+    sudo apt-get install cmake -y
+    cd ~
+    wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
+    unzip Waveshare_fbcp.zip
+    cd Waveshare_fbcp/
+    sudo chmod +x ./shell/*
 
+3. Run the shell script
+    ```bash
+    sudo ./shell/waveshare-1inch14
 
 ### X.1 Starting the script on boot
 
