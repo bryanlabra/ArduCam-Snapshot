@@ -267,6 +267,21 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
     ```bash
     sudo ./shell/waveshare-1inch14
 
+### 2.4 Setting up the camera module
+1. Run the shell script
+    ```bash
+    sudo nano /boot/config.txt 
+    ```
+    ```ini
+    camera_auto_detect=0
+    dtoverlay=imx708
+    ```
+  Save and exit. reboot the system from terminal using
+    ```bash
+    sudo reboot
+    ```
+
+
 ### X.1 Starting the script on boot
 
 1. Open terminal and create a systemd service to start the script on boot:
