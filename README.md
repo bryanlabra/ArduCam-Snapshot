@@ -135,7 +135,8 @@ Connect to the RPi with VNC viewer after the system has restarted
 
 4. Download and install OpenCV by typing:
     ```bash
-    cd~git clone --depth=1 https://github.com/opencv/opencv.git
+    cd ~
+    git clone --depth=1 https://github.com/opencv/opencv.git
     cd opencv
     mkdir build
     cd build
