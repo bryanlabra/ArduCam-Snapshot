@@ -27,7 +27,7 @@ This repo will serve as a step-by-step guide on how to interface a raspberry pi 
 
 ## Step 1: Setting Up the Hardware
 
-### 1.1 Wiring the 1.14" display to the rpi
+### 1.1 Wiring the 1.14" display to the Rpi
 
 <img width="1073" alt="Screenshot 2024-09-15 at 1 10 57 PM" src="https://github.com/user-attachments/assets/69d9f257-41db-46fa-828c-79a825819ba0">
 
@@ -76,27 +76,14 @@ Navigate down to **Interface Options** and press <kbd>Enter</kbd> to continue.
 
 Navigate down to **VNC**, press <kbd>Enter</kbd> to proceed, and press <kbd>Enter</kbd> to confirm **YES** to enable the server.
 
-3. Bring up the VNC Viewer and type in the IP address of the RPi. This will allow you to control the PI without an extra monitor and mouse + keyboard.
+While we are here, lets enable **SPI** as well. 
+
+3. Bring up VNC Viewer and type in the IP address of the RPi. This will allow you to control the RPi without an extra monitor or mouse + keyboard.
 
 4. Remove HDMI cable and mouse + keyboard
 
 ### 1.5 Setup a static IP for the Raspberry Pi
 A static IP address should be established for the RPi
-
-### 1.6 LCD Module Setup
-
-### 1.7 Arducam Module 3 Camera setup
-- **For the Raspberry Pi Camera Module:**
-  1. Locate the CSI (Camera Serial Interface) slot.
-  2. Gently lift the plastic clip.
-  3. Insert the camera ribbon cable with the metal contacts facing away from the Ethernet port.
-  4. Press down the clip to secure the cable.
-
-
-
-
-
-
 
 
 
@@ -240,9 +227,25 @@ Connect to the RPi with VNC viewer after the system has restarted
     ```bash
     import cv2
     cv2.__version__
+
+### 2.3 Setting up the LCD module
+1. Install libraries
+    ```bash
+    wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz
+    tar zxvf bcm2835-1.71.tar.gz 
+    cd bcm2835-1.71/
+    sudo ./configure && sudo make && sudo make check && sudo make install   
+    ```
+
     
 
-
+2. Check your version of open cv
+    ```bash
+    python3
+    ```
+    ```bash
+    import cv2
+    cv2.__version__
 
 
 ### X.1 Starting the script on boot
