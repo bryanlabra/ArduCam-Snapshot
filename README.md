@@ -280,7 +280,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
   Save and exit. reboot the system from terminal using
     ```bash
     sudo reboot
-    ```
+    
 
 
 ### X.1 Starting the script on boot
