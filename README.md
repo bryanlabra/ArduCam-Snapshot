@@ -410,20 +410,20 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
 3. Initialize the service file with the appropriate values:
 
    ```ini
-    [Unit]
-    Description= Service to start the camera on boot
-    After=multi-user.target
+   [Unit]
+   Description= Service to start the camera on boot
+   After=multi-user.target
 
-    [Service]
-    ExecStart=/usr/bin/python3 /home/pi/scripts/ArduCam-Snapshot.py
-    StandardOutput=inherit
-    StandardError=inherit
-    Restart=always
-    User=pi  ##change this value accordingly
-    Environment=DISPLAY=:0
+   [Service]
+   ExecStart=/usr/bin/python3 /home/pi/scripts/ArduCam-Snapshot.py
+   StandardOutput=inherit
+   StandardError=inherit
+   Restart=always
+   User=pi  ##change this value accordingly
+   Environment=DISPLAY=:0
 
-    [Install]
-    WantedBy=multi-user.target
+   [Install]
+   WantedBy=multi-user.target
 
 4. Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit
 
