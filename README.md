@@ -431,7 +431,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    
    ```bash
    sudo systemctl daemon-reload
-   sudo systemctl restart Arducam-Snapshot.service
+   sudo systemctl restart ArduCam-Snapshot.service
 6. After restarting, check if the service is running correctly:
 
     ```bash
