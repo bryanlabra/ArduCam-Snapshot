@@ -297,6 +297,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```
 3. Copy and paste the following script into the file. Save and exit
    ```bash
+
    import cv2
    from picamera2 import Picamera2
    import time
@@ -346,7 +347,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
        # Reset the index if the date has changed
        if new_date != current_date:
          current_date = new_date
-            image_index = 1
+         image_index = 1
 
        # Create filename based on date and index
        filename = f"{current_date}_{image_index}.jpg"
