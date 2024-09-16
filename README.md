@@ -229,13 +229,21 @@ Connect to the RPi with VNC viewer after the system has restarted
     cv2.__version__
 
 ### 2.3 Setting up the LCD module
-1. Install libraries
+1. Install libraries (lgpio)
     ```bash
-    wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz
-    tar zxvf bcm2835-1.71.tar.gz 
-    cd bcm2835-1.71/
-    sudo ./configure && sudo make && sudo make check && sudo make install   
+    wget https://github.com/joan2937/lg/archive/master.zip
+    unzip master.zip
+    cd lg-master
+    sudo make install 
     ```
+    ```bash
+    sudo apt-get update
+    sudo apt-get install python3-pip
+    sudo apt-get install python3-pil
+    sudo apt-get install python3-numpy
+    sudo pip3 install spidev 
+    ```
+
 
     
 
