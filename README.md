@@ -253,7 +253,17 @@ Connect to the RPi with VNC viewer after the system has restarted
     cd Waveshare_fbcp/
     sudo chmod +x ./shell/*
 
-3. Run the shell script
+3. start up the terminal
+    ```bash
+    sudo nano /boot/config.txt
+    ```
+    modify hdmi_cvt value 
+    ```ini
+    hdmi_cvt 640 480 60 1 0 0 0
+    ```
+Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X</kbd> to exit. We change these values temporarily.
+
+4. Run the shell script
     ```bash
     sudo ./shell/waveshare-1inch14
 
