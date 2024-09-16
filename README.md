@@ -425,6 +425,14 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    [Install]
    WantedBy=multi-user.target
 
+3.1. This works
+   ```ini
+   [Service]
+    ExecStart=/usr/bin/python3 -u /home/pi/scripts/ArduCam-Snapshot.py
+    Restart=always
+    User=pi
+    Environment=DISPLAY=:0
+    ```
 4. Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit
 
 5. Reload systemd:
