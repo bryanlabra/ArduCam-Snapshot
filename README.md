@@ -435,14 +435,15 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    sudo systemctl enable ArduCam-Snapshot.service
    ```
-  
-7. After restarting, check if the service is running correctly:
-
+7. Reboot the system.
+   ```bash
+   sudo reboot
+   ```
+8. After rebooting, check if the service is running correctly:
     ```bash
     sudo systemctl status ArduCam-Snapshot.service
 
-8. Perform a system reboot. The service should start the script on its own!
-
+X9. Perform a system reboot. The service should start the script on its own!
     ```bash
     sudo reboot
 
