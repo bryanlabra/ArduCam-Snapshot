@@ -294,7 +294,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    touch /home/pi/scripts/ArduCam-Snapshot.py
    ```
-3. Copy and paste the following script
+3. Copy and paste the following script into the file. Save and exit
    ```bash
     import cv2
     from picamera2 import Picamera2
@@ -387,6 +387,10 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
         GPIO.cleanup()
         picam2.stop()
         cv2.destroyAllWindows()
+   ```
+4. Test the script
+   ```bash
+   python3 /home/pi/scripts/ArduCam-Snapshot.py
    ```
 ### 2.5 Starting the script on boot
 
