@@ -121,6 +121,7 @@ Connect to the RPi with VNC viewer after the system has restarted
 
 3. Install third party software (see link above for details). These can be directly copy and pasted to terminal.
     ```bash
+    
     sudo apt-get install build-essential cmake git pkg-config
     sudo apt-get install python3-dev python3-numpy
     sudo apt-get install python-dev python-numpy
