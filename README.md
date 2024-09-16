@@ -431,27 +431,27 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    sudo systemctl daemon-reload
    ```
-  and restart the service
+6. Restart the service
    ```bash
    sudo systemctl restart ArduCam-Snapshot.service
    ```
   
-6. After restarting, check if the service is running correctly:
+7. After restarting, check if the service is running correctly:
 
     ```bash
     sudo systemctl status ArduCam-Snapshot.service
 
-7. Perform a system reboot. The service should start the script on its own!
+8. Perform a system reboot. The service should start the script on its own!
 
     ```bash
     sudo reboot
 
-8. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
+9. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
 
     ```bash
     sudo systemctl stop ArduCam-Snapshot.service
 
-9. Disable the service so that it does not restart again
+10. Disable the service so that it does not restart again
 
 
     ```bash
