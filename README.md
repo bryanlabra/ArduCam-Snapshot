@@ -117,9 +117,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
 2. Reboot the system
    ```bash
    sudo reboot
-
 Connect to the RPi with VNC viewer after the system has restarted
-
 
 3. Install third party software (see link above for details). These can be directly copy and pasted to terminal.
     ```bash
@@ -205,22 +203,22 @@ Connect to the RPi with VNC viewer after the system has restarted
           -D INSTALL_C_EXAMPLES=OFF \
           -D INSTALL_PYTHON_EXAMPLES=OFF ..
 
-5. Start the build:
+6. Start the build:
     ```bash
     make -j$(nproc)
 
-6. Follow with:
+7. Follow with:
     ```bash
     sudo make install
     sudo ldconfig
     sudo apt-get update
 
-7. Remove the OpenCV folder
+8. Remove the OpenCV folder
     ```bash
     cd ~
     sudo rm -rf opencv
 
-8. Check your version of open cv
+9. Check your version of open cv
     ```bash
     python3
     ```
@@ -228,46 +226,7 @@ Connect to the RPi with VNC viewer after the system has restarted
     import cv2
     cv2.__version__
 
-### 2.3 Setting up the LCD module
-1. Install libraries (lgpio)
-    ```bash
-    wget https://github.com/joan2937/lg/archive/master.zip
-    unzip master.zip
-    cd lg-master
-    sudo make install 
-    ```
-    ```bash
-    sudo apt-get update
-    sudo apt-get install python3-pip
-    sudo apt-get install python3-pil
-    sudo apt-get install python3-numpy
-    sudo pip3 install spidev 
-    ```
-
-2. FBCP Porting, Download the drivers
-    ```bash
-    sudo apt-get install cmake -y
-    cd ~
-    wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
-    unzip Waveshare_fbcp.zip
-    cd Waveshare_fbcp/
-    sudo chmod +x ./shell/*
-
-3. start up the terminal
-    ```bash
-    sudo nano /boot/config.txt
-    ```
-    modify hdmi_cvt value 
-    ```ini
-    hdmi_cvt 640 480 60 1 0 0 0
-    ```
-Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X</kbd> to exit. We change these values temporarily.
-
-4. Run the shell script
-    ```bash
-    sudo ./shell/waveshare-1inch14
-
-### 2.4 Setting up the camera module
+### 2.3 Setting up the camera module
 1. Run the shell script
     ```bash
     sudo nano /boot/config.txt 
@@ -283,7 +242,6 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    sudo reboot
 
 ### 2.4 Load and test the script
-
 1. Start by creating a new folder for scripts
    ```bash
    mkdir /home/pi/scripts
@@ -390,12 +348,55 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
        picam2.stop()
        cv2.destroyAllWindows()
    ```
+
 4. Test the script
    ```bash
    python3 /home/pi/scripts/ArduCam-Snapshot.py
    ```
-  You will notice that the video feed only takes up the upper left quadrant. We will adjust this after we have setup the service to start the script on boot
-### 2.5 Starting the script on boot
+  You will notice that the video feed only takes up the upper left quadrant. We will adjust this after we have setup the display and the service to start the script on boot
+
+### 2.5 Setting up the LCD module
+1. Install libraries (lgpio)
+    ```bash
+    wget https://github.com/joan2937/lg/archive/master.zip
+    unzip master.zip
+    cd lg-master
+    sudo make install 
+    ```
+    ```bash
+    sudo apt-get update
+    sudo apt-get install python3-pip
+    sudo apt-get install python3-pil
+    sudo apt-get install python3-numpy
+    sudo pip3 install spidev 
+    ```
+
+2. FBCP Porting, Download the drivers
+    ```bash
+    sudo apt-get install cmake -y
+    cd ~
+    wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
+    unzip Waveshare_fbcp.zip
+    cd Waveshare_fbcp/
+    sudo chmod +x ./shell/*
+
+3. start up the terminal
+    ```bash
+    sudo nano /boot/config.txt
+    ```
+    modify hdmi_cvt value 
+    ```ini
+    hdmi_cvt 640 480 60 1 0 0 0
+    ```
+Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X</kbd> to exit. We change these values temporarily.
+
+4. Run the shell script
+    ```bash
+    sudo ./shell/waveshare-1inch14
+
+
+
+### 2.6 Starting the script on boot
 
 1. Open terminal and create a systemd service to start the script on boot:
   
