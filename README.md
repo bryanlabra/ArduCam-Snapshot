@@ -394,6 +394,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    python3 /home/pi/scripts/ArduCam-Snapshot.py
    ```
+  You will notice that the video feed only takes up the upper left quadrant. We will adjust this after we have setup the service to start the script on boot
 ### 2.5 Starting the script on boot
 
 1. Open terminal and create a systemd service to start the script on boot:
@@ -430,11 +431,11 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    
    ```bash
    sudo systemctl daemon-reload
-   sudo systemctl restart Arducam_Snapshot.service
+   sudo systemctl restart Arducam-Snapshot.service
 6. After restarting, check if the service is running correctly:
 
     ```bash
-    sudo systemctl status feed.service
+    sudo systemctl status ArduCam-Snapshot.service
 
 7. Perform a system reboot. The service should start the script on its own!
 
