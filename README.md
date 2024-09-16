@@ -272,6 +272,7 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
     ```bash
     sudo nano /boot/config.txt 
     ```
+    Update the following parameters (ord add if not found):
     ```ini
     camera_auto_detect=0
     dtoverlay=imx708
