@@ -409,11 +409,18 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
 
 3. Initialize the service file with the appropriate values:
    ```ini
+   [Unit]
+    Description=ArduCam Snapshot Service
+    After=multi-user.target
+
    [Service]
     ExecStart=/usr/bin/python3 -u /home/pi/scripts/ArduCam-Snapshot.py
     Restart=always
     User=pi
     Environment=DISPLAY=:0
+
+   [Install]
+    WantedBy=multi-user.target
     ```
 4. Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit
 
@@ -421,18 +428,21 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    sudo systemctl daemon-reload
    ```
-6. Restart the service
+6. Enable the service
    ```bash
-   sudo systemctl restart ArduCam-Snapshot.service
+   sudo systemctl enable ArduCam-Snapshot.service
    ```
-The service will start on its own at this point. 
+7. Start the service
+   ```bash
+   sudo systemctl start ArduCam-Snapshot.service
+   ```
 
-9. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
+8. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
 
     ```bash
     sudo systemctl stop ArduCam-Snapshot.service
 
-10. Disable the service so that it does not restart again
+9. Disable the service so that it does not restart again
 
 
     ```bash
