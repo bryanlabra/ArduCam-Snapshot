@@ -427,11 +427,15 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
 
 4. Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>S</kbd> to exit
 
-5. Reload systemmd and restart the service:
-   
+5. Reload systemd:
    ```bash
    sudo systemctl daemon-reload
+   ```
+  and restart the service
+   ```bash
    sudo systemctl restart ArduCam-Snapshot.service
+   ```
+  
 6. After restarting, check if the service is running correctly:
 
     ```bash
