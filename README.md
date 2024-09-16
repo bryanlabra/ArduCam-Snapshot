@@ -408,24 +408,6 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    sudo nano /etc/systemd/system/ArduCam-Snapshot.service
 
 3. Initialize the service file with the appropriate values:
-
-   ```ini
-   [Unit]
-   Description= Service to start the camera on boot
-   After=multi-user.target
-
-   [Service]
-   ExecStart=/usr/bin/python3 /home/pi/scripts/ArduCam-Snapshot.py
-   StandardOutput=inherit
-   StandardError=inherit
-   Restart=always
-   User=pi  ##change this value accordingly
-   Environment=DISPLAY=:0
-
-   [Install]
-   WantedBy=multi-user.target
-
-3.1. This works
    ```ini
    [Service]
     ExecStart=/usr/bin/python3 -u /home/pi/scripts/ArduCam-Snapshot.py
@@ -439,21 +421,11 @@ Save by pressing <kbd>CTRL</kbd>+<kbd>S</kbd> followed by <kbd>CTRL</kbd>+<kbd>X
    ```bash
    sudo systemctl daemon-reload
    ```
-6. Start the service
+6. Restart the service
    ```bash
-   sudo systemctl enable ArduCam-Snapshot.service
+   sudo systemctl restart ArduCam-Snapshot.service
    ```
-7. Reboot the system.
-   ```bash
-   sudo reboot
-   ```
-8. After rebooting, check if the service is running correctly:
-    ```bash
-    sudo systemctl status ArduCam-Snapshot.service
-
-X9. Perform a system reboot. The service should start the script on its own!
-    ```bash
-    sudo reboot
+The service will start on its own at this point. 
 
 9. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
 
