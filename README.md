@@ -377,6 +377,7 @@ This process will take upwards of 4 hours.
     sudo ./shell/waveshare-1inch14
 
 ### 2.6 Starting the script on boot
+We want the script to run after powering on without requiring any additional external input. We will create a service to start the script on boot.
 
 1. Open terminal and create a systemd service to start the script on boot:
   
