@@ -424,12 +424,12 @@ We want the script to run after powering on without requiring any additional ext
    sudo systemctl start ArduCam-Snapshot.service
    ```
 
-8. You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
+8. (**OPTIONAL**)You may want to stop the service. Exit the script by pressing  <kbd>Q</kbd>. Navigate to the terminal and type
 
     ```bash
     sudo systemctl stop ArduCam-Snapshot.service
 
-9. Disable the service so that it does not restart again
+9. (**OPTIONAL**)Disable the service so that it does not restart again
 
 
     ```bash
