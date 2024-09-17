@@ -260,6 +260,7 @@ This process will take upwards of 4 hours.
     ```ini
     camera_auto_detect=0
     dtoverlay=imx708
+    hdmi_cvt=460 260 12 1 0 0 0 0 #sets mini display resolution
     ```
     Save and exit
 2. Reboot the system.
@@ -297,8 +298,8 @@ This process will take upwards of 4 hours.
    picam2 = Picamera2()
 
    # Set the desired resolution and frame rate (lower for smoother feed)
-   resolution = (320, 240)  # Lower resolution for smoother performance
-   frame_rate = 30  # Moderate frame rate for smoother feed
+   resolution = (460, 260)  # 480,270: 460, 260 : 320, 240
+   frame_rate = 12  # Moderate frame rate for smoother feed
 
    # Configure the camera with the resolution
    camera_config = picam2.create_still_configuration(main={"size": resolution})
