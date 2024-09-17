@@ -219,7 +219,7 @@ This process will take upwards of 4 hours.
     cd ~
     sudo rm -rf opencv
 
-9. Check your version of open cv
+9. Check your version of OpenCV
     ```bash
     python3
     ```
@@ -366,9 +366,6 @@ This process will take upwards of 4 hours.
     ```
     ```bash
     sudo apt-get update
-    sudo apt-get install python3-pip
-    sudo apt-get install python3-pil
-    sudo apt-get install python3-numpy
     sudo pip3 install spidev 
     ```
 
