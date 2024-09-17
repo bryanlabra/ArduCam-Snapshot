@@ -364,14 +364,8 @@ This process will take upwards of 4 hours.
     cd lg-master
     sudo make install 
     ```
-    ```bash
-    sudo apt-get update
-    sudo pip3 install spidev 
-    ```
-
 2. FBCP Porting, Download the drivers
     ```bash
-    sudo apt-get install cmake -y
     cd ~
     wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
     unzip Waveshare_fbcp.zip
