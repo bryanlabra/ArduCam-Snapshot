@@ -227,12 +227,36 @@ This process will take upwards of 4 hours.
     import cv2
     cv2.__version__
 
+
+
+### 2.3 Setting up the LCD module
+1. Install libraries (lgpio)
+    ```bash
+    wget https://github.com/joan2937/lg/archive/master.zip
+    unzip master.zip
+    cd lg-master
+    sudo make install 
+    ```
+2. FBCP Porting, Download the drivers
+    ```bash
+    cd ~
+    wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
+    unzip Waveshare_fbcp.zip
+    cd Waveshare_fbcp/
+    sudo chmod +x ./shell/*
+
+3. Run the shell script within the Waveshare_fbcp directory
+    ```bash
+    sudo ./shell/waveshare-1inch14
+
+4. The LCD module should now display the desktop. 
+
 ### 2.3 Setting up the camera module
-1. Run the shell script
+1. Open terminal
     ```bash
     sudo nano /boot/config.txt 
     ```
-    Update the following parameters (ord add if not found):
+    Update the following parameters (or add if not found):
     ```ini
     camera_auto_detect=0
     dtoverlay=imx708
@@ -242,12 +266,12 @@ This process will take upwards of 4 hours.
    ```bash
    sudo reboot
 
-### 2.4 Load and test the script
+### 2.5 Load and test the script
 1. Start by creating a new folder for scripts
    ```bash
    mkdir /home/pi/scripts
    ```
-   note your username(mine is pi) may be different
+   note your username may be different
 
 2. create and open a new file
    ```bash
@@ -355,26 +379,6 @@ This process will take upwards of 4 hours.
    python3 /home/pi/scripts/ArduCam-Snapshot.py
    ```
   You will notice that the video feed only takes up the upper left quadrant. We will adjust this after we have setup the display and the service to start the script on boot
-
-### 2.5 Setting up the LCD module
-1. Install libraries (lgpio)
-    ```bash
-    wget https://github.com/joan2937/lg/archive/master.zip
-    unzip master.zip
-    cd lg-master
-    sudo make install 
-    ```
-2. FBCP Porting, Download the drivers
-    ```bash
-    cd ~
-    wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
-    unzip Waveshare_fbcp.zip
-    cd Waveshare_fbcp/
-    sudo chmod +x ./shell/*
-
-3. Run the shell script within the Waveshare_fbcp directory
-    ```bash
-    sudo ./shell/waveshare-1inch14
 
 ### 2.6 Starting the script on boot
 We want the script to run after powering on without requiring any additional external input. We will create a service to start the script on boot.
